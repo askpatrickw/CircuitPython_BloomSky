@@ -43,7 +43,7 @@ Usage Example
 =============
 
 See full working example in the examples folder. The basic structure looks like this, ::
-    
+
     ## Join Network
     wifi.radio.connect(secrets["ssid"], secrets["password"])
 
@@ -91,4 +91,3 @@ Installing from PyPI
 ====================
 .. note:: This library is not available on PyPI yet. Stay tuned for PyPI availability,
 when\if CircuitPython libraries are supported from there.
-
