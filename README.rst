@@ -84,13 +84,9 @@ Pretty documentation available https://circuitpython-bloomsky.readthedocs.io/en/
 Installing from PyPI
 ====================
 
-.. note:: This library is not available on PyPI yet. Stay tuned for PyPI availability,
-when or if CircuitPython libraries are supported from there.
+.. note:: This library is not available on PyPI yet. Stay tuned for PyPI
+   availability, when or if CircuitPython libraries are supported from there.
 
-Installing from PyPI
-====================
-.. note:: This library is not available on PyPI yet. Stay tuned for PyPI availability,
-when or if CircuitPython libraries are supported from there.
 
 Acknowledgements
 ================
