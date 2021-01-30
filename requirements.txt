@@ -1,0 +1,8 @@
+
+# SPDX-FileCopyrightText: Copyright (c) 2021 Patrick Walters
+#
+# SPDX-License-Identifier: MIT
+
+Adafruit-Blinka
+adafruit-circuitpython-datetime
+adafruit-circuitpython-requests
