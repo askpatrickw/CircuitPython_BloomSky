@@ -21,7 +21,9 @@ CircuitPython Wrapper for BloomSky API
 
 
 Dependencies
-=============
+============
+
+adafruit/actions-ci-circuitpython-libs
 This driver depends on:
 
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
@@ -33,7 +35,7 @@ This is easily achieved by downloading
 `the Adafruit library and driver bundle <https://circuitpython.org/libraries>`_.
 
 BloomSky Account
-=============
+================
 This library is only usefule to owners of BloomSky Weather Stations.
 Get you Bloomsky API Key from your Bloomsky Dashboard.
 https://dashboard.bloomsky.com/
