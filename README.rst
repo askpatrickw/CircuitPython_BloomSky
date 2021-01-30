@@ -35,7 +35,7 @@ This is easily achieved by downloading
 
 BloomSky Account
 ================
-This library is only useful to owners of BloomSky Weather Stations.
+This library is only useful to owners of `BloomSky Weather Stations <https://shop.bloomsky.com/>`_.
 Get you Bloomsky API Key from your Bloomsky Dashboard.
 https://dashboard.bloomsky.com/
 
@@ -82,7 +82,7 @@ RTD coming soon.
 
 Acknowledgements
 ================
-The basic idea for this library and the idea rename attributes came from
+The basic idea for this library and the concept to rename attributes came from
 https://github.com/tylerdave/bloomsky-api and was heavily reworked for this
 library.
 
@@ -90,4 +90,4 @@ library.
 Installing from PyPI
 ====================
 .. note:: This library is not available on PyPI yet. Stay tuned for PyPI availability,
-when\if CircuitPython libraries are supported from there.
+when or if CircuitPython libraries are supported from there.
