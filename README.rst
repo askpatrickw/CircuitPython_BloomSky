@@ -91,3 +91,9 @@ Documentation
 =============
 
 For information on building library documentation, please check out `this guide <https://learn.adafruit.com/creating-and-sharing-a-circuitpython-library/sharing-our-docs-on-readthedocs#sphinx-5-1>`_.
+
+Acknowledgements
+=============
+The core idea for this library and the mapping idea and function came from
+https://github.com/tylerdave/bloomsky-api and was heavily reworked for this
+library.
