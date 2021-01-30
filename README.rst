@@ -50,7 +50,7 @@ Usage Example
     pool = socketpool.SocketPool(radio)
     requests = adafruit_requests.Session(pool, ssl.create_default_context())
     bloomsky_client = circuitpython_bloomsky.BloomSkyAPIClient(
-        requests, api_key=secrets["bloomsky_key"]
+    requests, api_key=secrets["bloomsky_key"]
     )
     bloomsky_report = bloomsky_client.get_data()
     print(bloomsky_report.device)
