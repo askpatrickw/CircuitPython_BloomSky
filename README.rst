@@ -23,7 +23,6 @@ CircuitPython Wrapper for BloomSky API
 Dependencies
 ============
 
-adafruit/actions-ci-circuitpython-libs
 This driver depends on:
 
 * `Adafruit CircuitPython <https://github.com/adafruit/circuitpython>`_
@@ -36,23 +35,34 @@ This is easily achieved by downloading
 
 BloomSky Account
 ================
-This library is only usefule to owners of BloomSky Weather Stations.
+This library is only useful to owners of BloomSky Weather Stations.
 Get you Bloomsky API Key from your Bloomsky Dashboard.
 https://dashboard.bloomsky.com/
 
 Usage Example
 =============
-::
+
+See full working example in the examples folder. The basic structure looks like this, ::
+    
     ## Join Network
     wifi.radio.connect(secrets["ssid"], secrets["password"])
+
     # Setup Requests
     radio = wifi.radio
     pool = socketpool.SocketPool(radio)
-    requests = adafruit_requests.Session(pool, ssl.create_default_context())
+    requests = adafruit_requests.Session(pool,
+    ssl.create_default_context())
+
+    # Create Bloomsky client.
     bloomsky_client = circuitpython_bloomsky.BloomSkyAPIClient(
-    requests, api_key=secrets["bloomsky_key"]
+        requests, api_key=secrets["bloomsky_key"]
     )
+
+    # Get data and utilize it in your application.
+    # This is the section you would put in your While loop if running
+    # repeatedly.
     bloomsky_report = bloomsky_client.get_data()
+
     print(bloomsky_report.device)
     print(bloomsky_report.indoor)
     print(bloomsky_report.sky)
@@ -68,16 +78,17 @@ before contributing to help this project stay welcoming.
 Documentation
 =============
 
-For information on building library documentation, please check out `this guide <https://learn.adafruit.com/creating-and-sharing-a-circuitpython-library/sharing-our-docs-on-readthedocs#sphinx-5-1>`_.
+RTD coming soon.
 
 Acknowledgements
 ================
-The core idea for this library and the mapping idea and function came from
+The basic idea for this library and the idea rename attributes came from
 https://github.com/tylerdave/bloomsky-api and was heavily reworked for this
 library.
 
 
 Installing from PyPI
 ====================
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
+.. note:: This library is not available on PyPI yet. Stay tuned for PyPI availability,
+when\if CircuitPython libraries are supported from there.
+
