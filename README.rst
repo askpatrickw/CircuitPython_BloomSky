@@ -64,7 +64,7 @@ To install in a virtual environment in your current project:
 
 Usage Example
 =============
-    
+
     ## Join Network
     wifi.radio.connect(secrets["ssid"], secrets["password"])
     # Setup Requests

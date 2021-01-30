@@ -32,7 +32,7 @@ bloomsky_client = circuitpython_bloomsky.BloomSkyAPIClient(
 
 
 bloomsky_report = bloomsky_client.get_data()
-print(bloomsky_report.device)   # Device Details and Media
-print(bloomsky_report.indoor)   # Indoor Data if Available
-print(bloomsky_report.sky)      # Sky Weather Station Data
-print(bloomsky_report.storm)    # Storm rain and wind gauge
+print(bloomsky_report.device)  # Device Details and Media
+print(bloomsky_report.indoor)  # Indoor Data if Available
+print(bloomsky_report.sky)  # Sky Weather Station Data
+print(bloomsky_report.storm)  # Storm rain and wind gauge
