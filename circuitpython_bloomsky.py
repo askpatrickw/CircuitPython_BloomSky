@@ -32,7 +32,7 @@ BLOOMSKY_API_URL = "https://api.bloomsky.com/api/skydata/"
 CLIENT_HEADERS = {"User-Agent": "CircuitPython-Bloomsky/{0}".format(__version__)}
 
 
-class BLOOMSKY_REPORT():
+class BLOOMSKY_REPORT:
     """
     Bloomsky Report Class represents data from the Bloomsky API.
     DEVICE is the Sky's non-wx and available media data.
@@ -148,7 +148,7 @@ class BLOOMSKY_REPORT():
         return "{0}".format(self.json)
 
 
-class BloomSkyAPIClient():
+class BloomSkyAPIClient:
     """ A client for interacting with the BloomSky API """
 
     def __init__(self, requests, api_key=None, api_url=BLOOMSKY_API_URL):
