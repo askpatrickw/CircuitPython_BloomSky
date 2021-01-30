@@ -77,17 +77,16 @@ before contributing to help this project stay welcoming.
 
 Documentation
 =============
-
-RTD coming soon.
-
-Acknowledgements
-================
-The basic idea for this library and the concept to rename attributes came from
-https://github.com/tylerdave/bloomsky-api and was heavily reworked for this
-library.
+Pretty documentation available https://circuitpython-bloomsky.readthedocs.io/en/latest/
 
 
 Installing from PyPI
 ====================
 .. note:: This library is not available on PyPI yet. Stay tuned for PyPI availability,
 when or if CircuitPython libraries are supported from there.
+
+Acknowledgements
+================
+The basic idea for this library and the concept to rename attributes came from
+https://github.com/tylerdave/bloomsky-api and was heavily reworked for this
+library.
