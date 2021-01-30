@@ -42,7 +42,7 @@ https://dashboard.bloomsky.com/
 
 Usage Example
 =============
-
+::
     ## Join Network
     wifi.radio.connect(secrets["ssid"], secrets["password"])
     # Setup Requests
