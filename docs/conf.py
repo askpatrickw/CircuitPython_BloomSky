@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-
-
+# SPDX-FileCopyrightText: Copyright (c) 2021 Patrick Walters
 #
 # SPDX-License-Identifier: MIT
 

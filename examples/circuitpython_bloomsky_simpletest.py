@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: Copyright (c) 2021 Patrick Walters
 #
 # SPDX-License-Identifier: Unlicense
 import socketpool
