@@ -32,7 +32,7 @@ BLOOMSKY_API_URL = "https://api.bloomsky.com/api/skydata/"
 CLIENT_HEADERS = {"User-Agent": "CircuitPython-Bloomsky/{0}".format(__version__)}
 
 
-class BLOOMSKY_REPORT(object):
+class BLOOMSKY_REPORT():
     """
     Bloomsky Report Class represents data from the Bloomsky API.
     DEVICE is the Sky's non-wx and available media data.
@@ -139,19 +139,16 @@ class BLOOMSKY_REPORT(object):
         Converts a timestamp to an iso format and adjusts for the sensing devices
         timezone
         """
-        try:
-            offset_adjusted_dt = datetime.fromtimestamp(timestamp) - timedelta(
-                hours=abs(offset_hours)
-            )
-            return offset_adjusted_dt.isoformat()
-        except:
-            raise
+        offset_adjusted_dt = datetime.fromtimestamp(timestamp) - timedelta(
+            hours=abs(offset_hours)
+        )
+        return offset_adjusted_dt.isoformat()
 
     def __repr__(self):
         return "{0}".format(self.json)
 
 
-class BloomSkyAPIClient(object):
+class BloomSkyAPIClient():
     """ A client for interacting with the BloomSky API """
 
     def __init__(self, requests, api_key=None, api_url=BLOOMSKY_API_URL):

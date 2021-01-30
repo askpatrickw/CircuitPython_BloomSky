@@ -1,8 +1,14 @@
 # SPDX-FileCopyrightText: Copyright (c) 2021 Patrick Walters
 #
 # SPDX-License-Identifier: Unlicense
-import socketpool
+
+"""
+This example shows retrieving data from the BloomSky API
+It will run on boards with native WIFI such as the ESP32-S2 based boards.
+"""
+
 import ssl
+import socketpool
 import wifi
 
 import adafruit_requests

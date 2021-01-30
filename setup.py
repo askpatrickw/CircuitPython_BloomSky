@@ -9,16 +9,15 @@ https://packaging.python.org/en/latest/distributing.html
 https://github.com/pypa/sampleproject
 """
 
-from setuptools import setup, find_packages
-
 # To use a consistent encoding
-from codecs import open
+from codecs import open as codec_open
 from os import path
+from setuptools import setup
 
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, "README.rst"), encoding="utf-8") as f:
+with codec_open(path.join(here, "README.rst"), encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
@@ -53,9 +52,6 @@ setup(
     # What does your project relate to?
     keywords="adafruit blinka circuitpython micropython circuitpython_bloomsky bloomsky "
     "weather",
-    # You can just specify the packages manually here if your project is
-    # simple. Or you can use find_packages().
-    # TODO: IF LIBRARY FILES ARE A PACKAGE FOLDER,
-    #       CHANGE `py_modules=['...']` TO `packages=['...']`
+
     py_modules=["circuitpython_bloomsky"],
 )
